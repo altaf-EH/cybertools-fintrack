@@ -59,7 +59,7 @@ pip install -r requirements.txt
 Example:
 
 ```bash
-python main.py --input input/sample_transactions.csv --output reports --case-id CASE-001
+python fintrack.py --input input/sample_transactions.csv --output reports --case-id CASE-001
 ```
 
 Generated reports and analysis artifacts will be stored in the specified output directory.
