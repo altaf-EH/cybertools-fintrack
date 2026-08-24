@@ -12,6 +12,11 @@ from reportlab.lib.colors import HexColor, white
 from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.lib.utils import ImageReader
 
+# --------------------------------------------------------
+# Copyright (c) 2026 CyberTools
+# Licensed under CC BY-NC-ND 4.0 International
+# All rights reserved. Commercial use & modification strictly prohibited.
+# --------------------------------------------------------
 
 # ============================================================
 # CONFIGURATION
@@ -360,6 +365,12 @@ def normalize_columns(df):
 
     return df.rename(columns=rename_map)
 
+# --------------------------------------------------------
+# Copyright (c) 2026 CyberTools
+# Licensed under CC BY-NC-ND 4.0 International
+# All rights reserved. Commercial use & modification strictly prohibited.
+# --------------------------------------------------------
+
 
 def build_datetime_column(df):
     if "datetime" in df.columns:
@@ -657,6 +668,12 @@ def analyze_accounts(df):
 
     return results
 
+# --------------------------------------------------------
+# Copyright (c) 2026 CyberTools
+# Licensed under CC BY-NC-ND 4.0 International
+# All rights reserved. Commercial use & modification strictly prohibited.
+# --------------------------------------------------------
+
 
 def top_account_pairs(df, top_n=15):
     """Link analysis: which pairs of accounts move the most money between
@@ -937,6 +954,12 @@ def generate_json_report(path, report_time, total_records, unique_accounts, tota
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
 
+# --------------------------------------------------------
+# Copyright (c) 2026 CyberTools
+# Licensed under CC BY-NC-ND 4.0 International
+# All rights reserved. Commercial use & modification strictly prohibited.
+# --------------------------------------------------------
+
 # ============================================================
 # XLSX REPORT (for banks / FIU / law-enforcement - sortable, filterable)
 # ============================================================
@@ -1114,6 +1137,11 @@ def draw_cybertools_logo(pdf, x, y, width=145):
     pdf.drawImage(image, x, y - height, width=width, height=height,
                   preserveAspectRatio=True, mask="auto")
 
+# --------------------------------------------------------
+# Copyright (c) 2026 CyberTools
+# Licensed under CC BY-NC-ND 4.0 International
+# All rights reserved. Commercial use & modification strictly prohibited.
+# --------------------------------------------------------
 
 def draw_pdf_header(pdf, width, height, page_no):
     draw_cybertools_logo(pdf, 45, height - 18, width=110)
@@ -1425,6 +1453,11 @@ def generate_pdf_report(path, report_time, total_records, unique_accounts, total
     draw_pdf_footer(pdf, width)
     pdf.save()
 
+# --------------------------------------------------------
+# Copyright (c) 2026 CyberTools
+# Licensed under CC BY-NC-ND 4.0 International
+# All rights reserved. Commercial use & modification strictly prohibited.
+# --------------------------------------------------------
 
 # ============================================================
 # MAIN
