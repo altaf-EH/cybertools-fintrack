@@ -25,8 +25,8 @@ FinTrack is a Python-based tool for analyzing financial transaction data, accoun
 
 ## Installation
 
-```bash
-git clone https://github.com/altafreza345-gif/cybertools-fintrack.git
+```bash[
+git clone https://github.com/altaf-EH/cybertools-fintrack.git
 cd cybertools-fintrack
 ```
 
